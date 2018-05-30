@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- import CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div id="app">
+    <!-- <el-button @click="visible = true">Button</el-button>
+    <el-dialog :visible.sync="visible" title="Hello world">
+      <p>Try Element</p>
+    </el-dialog> -->
+    <el-row>
+      <el-container>
+        <el-aside width="200px" class="sidebar">
+          <el-tree :data="data" class="dirtree"></el-tree>
+        </el-aside>
+        <el-main class="maincontainer">
+          <div id="mapcontainer">
+            <div id="allmap" style="width:100%;height:100%;"></div>
+          </div>
+        </el-main>
+      </el-container>
+    </el-row>
+  </div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="js/socket.io.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=72d4c84063b3c62721bcbd829606d3f9"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+<script>
+</script>
+
+</html>
