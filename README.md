@@ -33,3 +33,4 @@ project/js/index.js
     map.centerAndZoom(centerroom.center, centerroom.zoom);
   });
 ```
+![](/project/imgs/pic1.png)
