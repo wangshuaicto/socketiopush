@@ -13,6 +13,7 @@ npm run dev
 
 ## 说明
 ``` javascript
+// 启动需要配置端口以及修改project/js/index.js
 server.js
   # 此处监听 http://ip:port/sendpoi?loc=116.3964,39.9093
   app.get('/sendpoi', function (req, res) {
