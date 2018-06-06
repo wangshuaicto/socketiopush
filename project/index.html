@@ -17,7 +17,7 @@
     <el-row>
       <el-container>
         <el-aside width="200px" class="sidebar">
-          <el-tree :data="data" class="dirtree"></el-tree>
+          <el-tree :data="data" class="dirtree" @node-click="nodeclick"></el-tree>
         </el-aside>
         <el-main class="maincontainer">
           <div id="mapcontainer">
